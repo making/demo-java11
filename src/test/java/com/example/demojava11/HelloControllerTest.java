@@ -1,4 +1,4 @@
-package com.example.demojava10;
+package com.example.demojava11;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,6 +18,6 @@ public class HelloControllerTest {
     @Test
     public void hello() {
         String response = restTemplate.getForObject("/", String.class);
-        assertThat(response).isEqualTo("Hello Java 10!");
+        assertThat(response).isEqualTo("Hello Java 11!");
     }
 }

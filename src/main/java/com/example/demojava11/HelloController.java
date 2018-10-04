@@ -1,4 +1,4 @@
-package com.example.demojava10;
+package com.example.demojava11;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping(path = "/")
     public String hello() {
-        var s = "Hello Java 10!";
+        var s = "Hello Java 11!";
         return s;
     }
 }

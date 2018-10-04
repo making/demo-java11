@@ -1,8 +1,7 @@
 applications:
-- name: hello-java10
-  buildpack: https://github.com/cloudfoundry/java-buildpack.git#v4.12
-  path: target/demo-java10-0.0.1-SNAPSHOT.jar
+- name: hello-java11
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git#v4.16
+  path: target/demo-java11-0.0.1-SNAPSHOT.jar
   memory: 1g
   env:
-    # https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/index.yml
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 10.0.+}}'
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
